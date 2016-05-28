@@ -10,46 +10,43 @@
 /*
  * @Comment
  *
- * Knowns:	Works Order Number. e.g. WO15437
- *		Product Code. e.g. X87-222
- *		Total Number of pumps in the order.
- *		Number of pumps a box will hold.
+ * Knowns:
+ *  Works Order Number.
+ *	Product Code.
+ *	Total Number of items in the order.
+ *	Number of items a box will hold.
  *
  */ 
+ 
+ 
 /**
  * @Comment
  *
- * Calculate:	Number of boxes required to hold all the pumps.
- *	 	Number of pumps in the last bax.
- *		Serial numbers for the pumps.
- *		The number of the box. e.g. Box x of y.
+ * Calculate:
+ *  Number of boxes required to hold all the items.
+ *  Number of items in the last box.
+ *	Serial numbers for the items.
+ *	The number of the box. e.g. Box x of y.
  *
  */
+
 
 /**
  * @Comment
  *
- * The number of boxes required equals the total number of pumps divided by the number
- * of pumps that a box will hold. If there is a remainder add another box. The
- * remainder will be the number of pumps in the last box.
+ * The number of boxes required equals the total number of items divided by the number
+ * of items that a box will hold. If there is a remainder add another box. The
+ * remainder will be the number of items in the last box.
  *
  */
+
 
 /**
  * @Comment
  *
  * The serial number for a pump is created by taking the current year and adding
- * the current week in the year and a four digit representation of the pump
+ * the current week in the year and a four digit representation of the item
  * number. To this add a hyphen and the numerical part of the works order
- * number.O
+ * number.
  *
  */
-
-$worksOrder = "WO15437";
-$productCode = "X87-222";
-$pumpsOrdered = 1000;
-$pumpsPerBox = 45;
-
-
-$numberOfBoxes = $pumpsOrdered / $pumpsPerBox; 
-$remainder = $pumpsOrdered % $pumpsPerBox; 
