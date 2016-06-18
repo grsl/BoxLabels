@@ -10,21 +10,40 @@
 /*
  * @Comment
  *
+<<<<<<< HEAD
  * Knowns:	Works Order Number. e.g. WO15437
  *		Product Code. e.g. X87-222
  *		Total Number of items in the order.
  *		Number of items a box will hold.
+=======
+ * Knowns:
+ *  Works Order Number.
+ *	Product Code.
+ *	Total Number of items in the order.
+ *	Number of items a box will hold.
+>>>>>>> 0ac11597b64b3098ff70f42359aa52dc02f9f5a0
  *
  */ 
+ 
+ 
 /**
  * @Comment
  *
+<<<<<<< HEAD
  * Calculate:	Number of boxes required to hold all the items.
  *	 	Number of items in the last bax.
  *		Serial numbers for the items.
  *		The number of the box. e.g. Box x of y.
+=======
+ * Calculate:
+ *  Number of boxes required to hold all the items.
+ *  Number of items in the last box.
+ *	Serial numbers for the items.
+ *	The number of the box. e.g. Box x of y.
+>>>>>>> 0ac11597b64b3098ff70f42359aa52dc02f9f5a0
  *
  */
+
 
 /**
  * @Comment
@@ -35,12 +54,17 @@
  *
  */
 
+
 /**
  * @Comment
  *
+<<<<<<< HEAD
  * The serial number for a item is created by taking the current year and adding
+=======
+ * The serial number for a pump is created by taking the current year and adding
+>>>>>>> 0ac11597b64b3098ff70f42359aa52dc02f9f5a0
  * the current week in the year and a four digit representation of the item
  * number. To this add a hyphen and the numerical part of the works order
- * number.O
+ * number.
  *
  */
