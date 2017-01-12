@@ -1,0 +1,59 @@
+
+# Requirements for the Labels for WGC
+
+James has told me that from yesterday's meeting the following is required on the label;
+
+ - Product Code
+ - Barcode of Product Code
+ - Serial Number from
+ - Serial Number to
+
+## Serial Number from
+
+This is the serial number of the first pump in the box.
+
+## Serial Number to
+
+This is the serial number of the last pump in the box.
+
+The serial number is constructed as follows: YYWWXXXX(SPACE)[WORKS ORDER]
+ 
+Product Code = The internal code of the product being packed.
+Barcode of the Product Code = The internal code of the product being packed in 3 of 9 barcode font; prefixed and suffixed with asterisk to denote the beginning and end of the barcode.
+YY = Two digit year.
+WW = Two digit week number with leading zeros where applicable.
+PUMP# = The number of the pump.
+WORKS ORDER = The Works Order number minus the leading letters, which are always 'WO'. The Works Order number is always 5 digits.
+
+For example; 17010001 12345
+
+There will be a minimum of one box per order.
+If there is more than one box in the order the 'Serial Number From' and the 'Serial Number To' will be the serial numbers of the pumps in that box and not in the whole order.
+
+The week number needs to be selectable.
+
+
+## Required Input
+
+The product code
+The serial number of the first pump in the order.
+The number of pumps in the order.
+The number of pumps that a box will hold.
+The Works Order number
+The week number
+
+
+## Calculated Data
+
+The current year
+The first and last serial number in each box.
+
+
+## Required Output
+
+Product Code
+Barcode of Product Code
+Serial Number from
+Serial Number to
+
+
